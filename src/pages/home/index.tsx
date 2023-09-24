@@ -11,6 +11,8 @@ import { Project } from "@/components/Project";
 import { stackData } from "@/utils/stackData";
 import { userData } from "@/utils/userData";
 
+import "animate.css";
+
 // Page Style
 import {
   Header,
@@ -24,26 +26,26 @@ import {
   ProjectAreaWrapperColumns,
 } from "./style";
 
-
 export const Home = (): JSX.Element => {
   return (
     <main>
       <Header>
         <Container>
-          <HeaderContent>
-            <Text as="h1" type="heading1" color="grey5">
-              Criando experiências por meio da tecnologia{" "}
+          <HeaderContent className="animate__animated animate__jackInTheBox">
+            <Text as="h1" type="heading1" color="grey6">
+              Bem vindo!{" "}
             </Text>
             <Text type="body1" color="grey6">
-              Sou estudante de programação na Kenzie Academy Brasil, participei
-              de diversos projetos resolvendo problemas de alto nível e
-              desenvolvendo habilidades
+              Meu nome é Lucas Carvalho, e sou um desenvolvedor fullstack com
+              experiência em uma ampla variedade de projetos desafiadores.
+              Durante minha jornada, tive a oportunidade de resolver problemas
+              complexos e aprimorar minhas habilidades constantemente.
             </Text>
             <HeaderButtonsArea>
               <Button as="a" href="#projetos">
                 Projetos
               </Button>
-              <Button as="a" href="#tecnologias" type="btLink" color="grey5">
+              <Button as="a" href="#tecnologias">
                 Tecnologias
               </Button>
             </HeaderButtonsArea>

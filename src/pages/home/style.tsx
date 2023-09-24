@@ -2,14 +2,16 @@ import { styled } from "@/styles/stitches.config";
 import { Flex } from "@/styles/Global";
 import { Button } from "@/styles/Buttons";
 
-import img from "@/public/static/img/background/dots.svg";
+//Image Background
+import bcg from "@/public/static/img/background/bcggg.png";
 
 export const Header = styled("header", {
   backgroundColor: "$brand1",
   padding: "12rem 0 8rem 0",
-  backgroundImage: `url(${img})`,
   backgroundRepeat: "no-repeat",
-  backgroundPosition: "bottom 1rem right 1rem",
+  backgroundImage: `url(${bcg})`,
+  backgroundSize: "cover",
+
   "@mobile": {
     padding: "9rem 0 6rem 0",
   },
@@ -21,10 +23,16 @@ export const HeaderContent = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "$2",
+  // backgroundColor: "rgba(92, 99, 237, 0.9)",
+  backgroundColor: "rgba(0, 0, 0, 0.8)",
+  borderRadius: "10px",
+  padding: "1rem",
 });
 
 export const HeaderButtonsArea = styled(Flex, {
   marginTop: "$2",
+  margin: "0 auto",
+  gap: "1rem",
   "@mobile": {
     flexDirection: "column",
     [`& ${Button}`]: {

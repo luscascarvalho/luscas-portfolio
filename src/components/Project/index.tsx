@@ -27,7 +27,7 @@ export const Project = (): JSX.Element => {
     const fetchData = async () => {
       const data: Response = await fetch(
         `https://api.github.com/users/${userData.githubUser}/repos`
-      )
+      );
 
       const json = await data.json();
 
@@ -44,7 +44,7 @@ export const Project = (): JSX.Element => {
 
   return (
     <>
-      {repositories?.map((repository) => (
+      {repositories?.slice(0, 7).map((repository) => (
         <ProjectWrapper key={repository.id}>
           <Text
             as="h2"
